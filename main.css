@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: blue;
+    color: #fff
+}
+
+header nav li  {
+    display: inline;
+    margin-left: 16px;
+    color: #fff;
+    font-size: 24px;
+}
+
+header nav li a {
+    display: inline;
+    margin-left: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    color: blue;
+    margin-bottom: 16px;
+    border-bottom: 1px solid blue;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.brands-list img {
+    height: 280px;
+    padding: 16px;
+}
+
+.sobre p {
+    display: block;
+    font-size: 1.5em;
+}
+
+.brands-list {
+    display: flex;
+    list-style: none;
+    padding: 16px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0 ;
+}
+section p {
+    margin-bottom: 8px;
+}
+
+.store {
+    margin-right: 32px;
+    height: 400px;
+    width: 400px;
+}
+
+.brands-list p {
+    word-wrap: break-word;
+    width: 280px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: rgb(129, 129, 247);
+    color: #fff;
+    padding: 8px 72px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    header .container,
+    section .container {
+        flex-direction: column;
+    }
+
+    
+    .brands-list{
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .store {
+        margin-right: 32px;
+        height: 700px;
+        width: 800px;
+    }
+    
+    .brands-list {
+        display: grid;
+        grid-template-columns:50% 50% ;
+    }
+
+    .brands-list img {
+        max-width: 100%;
+    }
+    
+    .sobre p, h2  {
+        display: block;
+        font-size: 1.5em;
+        padding: 16px 0 ;
+    }
+    
+    section {
+        padding:6px ;
+    }
+    section p {
+        margin-bottom: 8px;
+    }
+
+}
+
+
